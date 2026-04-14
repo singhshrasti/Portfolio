@@ -38,13 +38,25 @@ https://github.com/singhshrasti/Portfolio
 
 ## Deployment
 
-The project is configured for GitHub Pages and will be published automatically from the `main` branch.
+This project is ready to deploy on Vercel.
 
-Once the workflow finishes, the public site should be available at:
+### Vercel setup
 
-https://singhshrasti.github.io/Portfolio/
+1. Go to https://vercel.com/new
+2. Connect your GitHub account
+3. Select the `singhshrasti/Portfolio` repository
+4. Use the default settings
+
+Vercel will automatically run:
+
+```bash
+npm install
+npm run build
+```
+
+The production site will be served from the root URL assigned by Vercel.
 
 ## Notes
 
-- The repository is already initialized and pushed to GitHub.
-- GitHub Actions is set up to build and deploy this Vite app to Pages.
+- A `vercel.json` file is included to configure the static build and SPA routing.
+- You can still keep GitHub Pages, but Vercel is now the recommended deployment path for this repo.
