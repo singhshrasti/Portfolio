@@ -10,6 +10,7 @@ const projects = [
     solution: "Built a full-stack Splitwise clone with real-time sync, secure auth via Clerk, and a polished modern UI using Shadcn.",
     impact: "Seamless multi-user expense management with real-time data synchronization via Convex and Prisma.",
     tech: ["React 19", "Next.js 15", "Tailwind CSS", "Shadcn UI", "Convex", "Prisma", "Clerk Auth"],
+    repo: "https://github.com/singhshrasti/Splitr.git",
     color: "from-primary/20 to-accent/10",
   },
   {
@@ -19,6 +20,7 @@ const projects = [
     solution: "Created an AI gesture recognition system that maps hand movements to system-level controls like volume and brightness.",
     impact: "Real-time, touchless interaction enabling intuitive system control through computer vision.",
     tech: ["Python", "OpenCV", "MediaPipe", "NumPy", "Pycaw", "Screen Brightness Control"],
+    repo: "https://github.com/singhshrasti/NexaGesture.git",
     color: "from-accent/20 to-primary/10",
   },
 ];
@@ -58,10 +60,10 @@ const ProjectsSection = () => {
                     <p className="font-mono text-xs text-muted-foreground mt-1">{p.period}</p>
                   </div>
                   <div className="flex gap-3">
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
+                    <a href={p.repo} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
                       <GithubIcon size={20} />
                     </a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Live">
+                    <a href={p.repo} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Live">
                       <ExternalLink size={20} />
                     </a>
                   </div>
