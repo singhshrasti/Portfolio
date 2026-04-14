@@ -39,7 +39,7 @@ const SkillsSection = () => {
         >
           <p className="font-mono text-primary text-sm mb-2 tracking-widest">02. SKILLS</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            My <span className="text-gradient">tech arsenal</span>
+            My <span className="text-gradient">Technical Skills</span>
           </h2>
         </motion.div>
 
