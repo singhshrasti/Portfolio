@@ -60,3 +60,7 @@ The production site will be served from the root URL assigned by Vercel.
 
 - A `vercel.json` file is included to configure the static build and SPA routing.
 - You can still keep GitHub Pages, but Vercel is now the recommended deployment path for this repo.
+
+## Author
+
+GitHub: https://github.com/singhshrasti
