@@ -59,6 +59,7 @@ The production site will be served from the root URL assigned by Vercel.
 ## Projects
 
 - **NexaGesture**: https://github.com/singhshrasti/NexaGesture.git
+- **Splitr**: https://github.com/singhshrasti/Splitr.git
 
 ## Notes
 
