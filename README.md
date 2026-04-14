@@ -56,6 +56,10 @@ npm run build
 
 The production site will be served from the root URL assigned by Vercel.
 
+## Projects
+
+- **NexaGesture**: https://github.com/singhshrasti/NexaGesture.git
+
 ## Notes
 
 - A `vercel.json` file is included to configure the static build and SPA routing.
