@@ -56,9 +56,9 @@ const ContactSection = () => {
           className="flex items-center justify-center gap-5 mt-6"
         >
           {[
-            { icon: GithubIcon, href: "https://github.com", label: "GitHub" },
-            { icon: LinkedinIcon, href: "https://linkedin.com", label: "LinkedIn" },
-            { icon: Code2, href: "https://leetcode.com", label: "LeetCode" },
+            { icon: GithubIcon, href: "https://github.com/singhshrasti", label: "GitHub" },
+            { icon: LinkedinIcon, href: "https://www.linkedin.com/in/shrasti-singh-750a57261/", label: "LinkedIn" },
+            { icon: Code2, href: "https://leetcode.com/u/shrasti_singh28/", label: "LeetCode" },
             { icon: Phone, href: "tel:+919889200551", label: "Phone" },
           ].map(({ icon: Icon, href, label }) => (
             <a
