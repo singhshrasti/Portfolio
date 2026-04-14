@@ -36,7 +36,15 @@ This project is published at:
 
 https://github.com/singhshrasti/Portfolio
 
+## Deployment
+
+The project is configured for GitHub Pages and will be published automatically from the `main` branch.
+
+Once the workflow finishes, the public site should be available at:
+
+https://singhshrasti.github.io/Portfolio/
+
 ## Notes
 
 - The repository is already initialized and pushed to GitHub.
-- If you want GitHub Pages deployment next, I can help add the Vite `base` path and deploy instructions.
+- GitHub Actions is set up to build and deploy this Vite app to Pages.
