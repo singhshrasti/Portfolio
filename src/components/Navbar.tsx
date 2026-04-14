@@ -1,12 +1,19 @@
 import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 
 const links = ["About", "Skills", "Projects", "Experience", "Achievements", "Contact"];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -33,7 +40,7 @@ const Navbar = () => {
           &lt;SS /&gt;
         </button>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4">
           {links.map((l) => (
             <button
               key={l}
@@ -44,6 +51,13 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="p-2 rounded-lg border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-200 ml-4"
+            aria-label="Toggle theme"
+          >
+            {mounted && (theme === "dark" ? <Sun size={20} /> : <Moon size={20} />)}
+          </button>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
