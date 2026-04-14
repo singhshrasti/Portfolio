@@ -64,4 +64,5 @@ The production site will be served from the root URL assigned by Vercel.
 ## Author
 
 GitHub: https://github.com/singhshrasti  
-LinkedIn: https://www.linkedin.com/in/shrasti-singh-750a57261/
+LinkedIn: https://www.linkedin.com/in/shrasti-singh-750a57261/  
+LeetCode: https://leetcode.com/u/shrasti_singh28/
