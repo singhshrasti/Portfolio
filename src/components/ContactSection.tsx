@@ -34,6 +34,21 @@ const ContactSection = () => {
         </motion.a>
 
         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="space-y-2 mb-8"
+        >
+          <p className="text-muted-foreground text-sm">
+            <span className="font-semibold">Phone:</span> +91 9889200551
+          </p>
+          <p className="text-muted-foreground text-sm">
+            <span className="font-semibold">Email:</span> shrastisingh551@gmail.com
+          </p>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -57,21 +72,6 @@ const ContactSection = () => {
               <Icon size={22} />
             </a>
           ))}
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="mt-8 space-y-2"
-        >
-          <p className="text-muted-foreground">
-            <span className="font-semibold">Phone:</span> +91 9889200551
-          </p>
-          <p className="text-muted-foreground">
-            <span className="font-semibold">Email:</span> shrastisingh551@gmail.com
-          </p>
         </motion.div>
       </div>
 
